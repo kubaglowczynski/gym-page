@@ -1,8 +1,6 @@
 <div [ngStyle]="style" (click)="onClick()" class="livesection">
-    <button [ngStyle]="styleP">{{buttonText}}</button>
+    <button [ngStyle]="styleP">{{buttonText}} <i [ngStyle]="styleIconHeart" class="fa-solid fa-heart-crack fa-beat"></i><i [ngStyle]="styleIconGym" class="fa-solid fa-dumbbell fa-bounce"></i></button>
     <p>we are open:</p>
     <p>monday - saturday:</p>
     <p>8:00 - 22:00</p>
-    <p>sunday:</p>
-    <p>we are close</p>
 </div>

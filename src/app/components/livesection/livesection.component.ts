@@ -8,6 +8,8 @@ import { Component } from '@angular/core';
 export class LivesectionComponent {
   style = {};
   styleP = {};
+  styleIconGym = {};
+  styleIconHeart = {};
   toggle = false;
   buttonText: string = '';
 
@@ -28,18 +30,24 @@ export class LivesectionComponent {
 
   
   changeTheme(): void {
-    if (this.currentDayName === "Sunday" || this.currentHour<= 7 || this.currentHour >= 23) {
+    if (this.currentDayName === "Sunday" || this.currentHour <= 7 || this.currentHour >= 23) {
       this.styleP = {
         backgroundColor: 'red'
       }
       this.buttonText = 'we are close now';
       console.log(this.currentHour);
+      this.styleIconGym= {
+        display: "none"
+      }
     }
     else {
       this.styleP = {
         backgroundColor: 'greenyellow'
       }
       this.buttonText = 'we are open now';
+      this.styleIconHeart= {
+        display: "none"
+      }
     }
   }
 
