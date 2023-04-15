@@ -8,6 +8,21 @@ import { Component, HostListener } from '@angular/core';
 })
 export class NavbarComponent {
   style = {};
+  styleMobileLinks = {};
+  toggle = false;
+
+  onClick(): void{
+    this.toggle = !this.toggle;
+    this.styleMobileLinks = {
+      display: this.toggle ? 'none' : 'flex'
+    };
+  }
+
+  hideLinks(): void{
+    this.styleMobileLinks = {
+      display: 'none'
+    };
+  }
 
   @HostListener('window:scroll', [])
   onScroll(): void {

@@ -16,7 +16,7 @@ export class LivesectionComponent {
   onClick(): void {
     this.toggle = !this.toggle;
     this.style = {
-      maxHeight: this.toggle ? '150px' : '30px',
+      maxHeight: this.toggle ? '300px' : '30px',
       transition: "0.4s ease"  
     };
   }
@@ -30,11 +30,11 @@ export class LivesectionComponent {
 
   
   changeTheme(): void {
-    if (this.currentDayName === "Sunday" || this.currentHour <= 7 || this.currentHour >= 23) {
+    if (this.currentDayName === "Sunday" || this.currentHour <= 7 || this.currentHour >= 22) {
       this.styleP = {
         backgroundColor: 'red'
       }
-      this.buttonText = 'we are close now';
+      this.buttonText = 'we are closed now';
       console.log(this.currentHour);
       this.styleIconGym= {
         display: "none"

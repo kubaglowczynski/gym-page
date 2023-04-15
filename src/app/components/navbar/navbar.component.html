@@ -1,6 +1,7 @@
+<div class="main">
 <div class="navbar">
     <div class="logo">
-        <img [ngStyle]="style" src="https://pbs.twimg.com/media/FttJN9fX0AQX2tL?format=png&name=small" alt="">
+        <img routerLink="/" [ngStyle]="style" src="https://pbs.twimg.com/media/FttJN9fX0AQX2tL?format=png&name=small" alt="">
     </div>
     <div class="links">
         <a routerLink="/">Home</a>
@@ -11,5 +12,15 @@
         <a routerLink="/pricing">Pricing</a>
         <a routerLink="/contact">Contact</a>
     </div>
-    <button>MORE</button>
+    <button (click)="onClick()"><i class="fa-solid fa-bars"></i></button>
+</div>
+<div class="mobile-links" [ngStyle]="styleMobileLinks">
+    <div (click)="hideLinks()" routerLink="/" class="mobile-link">Home</div>
+    <div (click)="hideLinks()" routerLink="/news" class="mobile-link">News</div>
+    <div (click)="hideLinks()" routerLink="/about" class="mobile-link">About</div>
+    <div (click)="hideLinks()" routerLink="/offer" class="mobile-link">Offer</div>
+    <div (click)="hideLinks()" routerLink="/schedule" class="mobile-link">Schedule</div>
+    <div (click)="hideLinks()" routerLink="/pricing" class="mobile-link">Pricing</div>
+    <div (click)="hideLinks()" routerLink="/contact" class="mobile-link">Contact</div>
+</div>
 </div>
