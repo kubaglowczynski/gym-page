@@ -3,7 +3,59 @@
 @media only screen and (max-width: 640px) {
     margin-top: 7vh;
 }
-img{
-    width: 100%;
+.classes{
+    background: url("https://images.unsplash.com/photo-1519505907962-0a6cb0167c73?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80");
+    height: 80vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    @media only screen and (max-width: 640px) {
+        height: 60vh;
+        flex-direction: column;
+    }
+    .info{
+        color: #F5DEB3;
+        font-size: 2rem;
+        text-shadow: 2px 2px black;
+    }
+    .buttons{
+        display: flex;
+        flex-direction: column;
+        button{
+            border: 5px solid;
+            border-radius: 50px;
+            border-color: #252525;
+            animation: border-color 15s linear infinite;
+            margin: 10px;
+            padding: 10px;
+            background-color: #252525;
+            color: #F5DEB3;
+            cursor: pointer;
+            &:hover {
+                border: 5px solid #252525;
+                animation: stop;
+            }
+        }
+    }
 }
 }
+@keyframes border-color {
+    0% {
+      border-color: #252525;
+    }
+    25% {
+      border-color: #F5DEB3;
+    }
+    50% {
+      border-color: #252525;
+    }
+    75% {
+      border-color: #F5DEB3;
+    }
+    100% {
+      border-color: #252525;
+    }
+  }
