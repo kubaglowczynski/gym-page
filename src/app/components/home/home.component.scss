@@ -42,6 +42,7 @@
     }
 }
 .exercise-zones{
+  height: 400px;
   background: rgb(184,218,218);
   background: linear-gradient(0deg, rgba(184,218,218,1) 0%, rgba(65,59,47,1) 100%);
   display: flex;
@@ -49,17 +50,20 @@
   align-items: center;
   @media only screen and (max-width: 640px) {
     flex-direction: column;
+    height: 1000px;
 }
   .cardio,
   .strength,
   .spining,
   .sauna{
     color: #fff;
+    font-size: 2rem;
+    text-shadow: 2px 2px black;
 
     height: 500px;
     width: 300px;
 
-    border-radius: 50px;
+    border-radius: 50px 5px;
     box-shadow: 0 0 10px black;
     margin: 50px;
 
