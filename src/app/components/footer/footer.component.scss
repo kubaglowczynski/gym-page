@@ -1,5 +1,54 @@
 .footer{
+    color: #252525;
     width: 100%;
-    height: 20vh;
-    background-color: #252520;
+    height: 40vh;
+    background-color: #d9d9d9;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    @media only screen and (max-width: 640px) {
+        flex-direction: column;
+    }
+
+    .socials{
+        width: 30%;
+        @media only screen and (max-width: 640px) {
+            width: 90%;
+        }
+        &__img{
+            width: 150px;
+            height: 100px;
+            background: url("https://pbs.twimg.com/media/FttJN9fX0AQX2tL?format=png&name=small");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        &__links{
+            font-size: 2rem;
+            i{
+                margin-right: 10px;
+            }
+        }
+        &__mainparagraph{
+            color: rgba(#252525, 0.6);
+            font-weight: 500;
+            @media only screen and (max-width: 640px) {
+                display: none;
+            }
+        }
+    }
+    .pages{
+        display: flex;
+        flex-direction: column;
+        @media only screen and (max-width: 640px) {
+            display: none;
+        }
+    }
+    .openinghours{
+        @media only screen and (max-width: 640px) {
+            display: none;
+        }
+    }
 }

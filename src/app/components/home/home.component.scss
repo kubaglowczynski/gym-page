@@ -59,6 +59,7 @@
     color: #fff;
     font-size: 2rem;
     text-shadow: 2px 2px black;
+    font-weight: 700;
 
     height: 500px;
     width: 300px;
@@ -123,7 +124,8 @@
     }
     .gallery{
       width: 50%;
-      background-color: greenyellow;
+      background: url("https://images.unsplash.com/photo-1597299407241-638aa26e56c6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1457&q=80");
+      background-size: cover;
       padding: 100px;
       @media only screen and (max-width: 640px) {
         height: 50%;
@@ -160,7 +162,7 @@
   }
     .pricing{
       width: 50%;
-      background-color: red;
+      background-color: rgb(102, 93, 93);
       @media only screen and (max-width: 640px) {
         height: 50%;
         width: 100%;
