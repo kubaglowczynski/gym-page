@@ -6,8 +6,8 @@
             <h4>FIT & PERFECT</h4>
         </div>
         <div class="buttons">
-            <button class="buttons__btn">LOOK AT OUR OFFER</button>
-            <button class="buttons__btn">CLASSES SCHEDULE</button>
+            <button routerLink="/offer" class="buttons__btn">LOOK AT OUR OFFER</button>
+            <button routerLink="/schedule" class="buttons__btn">CLASSES SCHEDULE</button>
         </div>
     </div>
     <div class="exercise-zones">
@@ -18,9 +18,8 @@
     </div>
     <div class="gallery-pricing-section">
         <div class="gallery">
-            <h1>JOIN US!</h1>
                 <div class="cards">
-                    <div class="cards__group" data-index="0" data-status="active">
+                    <div class="cards__group" data-index="0" [ngStyle]="styleCards0">
                         <div class="card--little card"></div>
                         <div class="card--big card"></div>
                         <div class="card--little card"></div>
@@ -30,7 +29,7 @@
                         <div class="card--little card"></div>
                         <div class="card--big card"></div>
                     </div>
-                    <div class="cards__group" data-index="1" data-status="unknown">
+                    <div class="cards__group" data-index="1" [ngStyle]="styleCards1">
                         <div class="card--little card"></div>
                         <div class="card--big card"></div>
                         <div class="card--little card"></div>
@@ -40,7 +39,7 @@
                         <div class="card--little card"></div>
                         <div class="card--big card"></div>
                     </div>
-                    <div class="cards__group" data-index="2" data-status="unknown">
+                    <div class="cards__group" data-index="2" [ngStyle]="styleCards2">
                         <div class="card--little card"></div>
                         <div class="card--big card"></div>
                         <div class="card--little card"></div>
@@ -52,10 +51,10 @@
                     </div>
                 </div>
             <div class="cards__buttons">
-                <button class="cards__buttons--left" onclick="handleLeftClick()">
+                <button class="cards__buttons--left" (click)="goingLeft()">
                     <i class="fa-solid fa-arrow-left"></i>
                 </button>
-                <button class="cards__buttons--right" (click)="handleRightClick()">
+                <button class="cards__buttons--right" (click)="goingRight()">
                     <i class="fa-solid fa-arrow-right"></i>
                 </button>
             </div>
