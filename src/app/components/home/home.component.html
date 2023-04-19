@@ -30,12 +30,32 @@
                         <div class="card--little card"></div>
                         <div class="card--big card"></div>
                     </div>
+                    <div class="cards__group" data-index="1" data-status="unknown">
+                        <div class="card--little card"></div>
+                        <div class="card--big card"></div>
+                        <div class="card--little card"></div>
+                        <div class="card--big card"></div>
+                        <div class="card--little card"></div>
+                        <div class="card--big card"></div>
+                        <div class="card--little card"></div>
+                        <div class="card--big card"></div>
+                    </div>
+                    <div class="cards__group" data-index="2" data-status="unknown">
+                        <div class="card--little card"></div>
+                        <div class="card--big card"></div>
+                        <div class="card--little card"></div>
+                        <div class="card--big card"></div>
+                        <div class="card--little card"></div>
+                        <div class="card--big card"></div>
+                        <div class="card--little card"></div>
+                        <div class="card--big card"></div>
+                    </div>
                 </div>
-            <div class="card-swiper-buttons">
-                <button id="left-button" onclick="handleLeftClick()">
+            <div class="cards__buttons">
+                <button class="cards__buttons--left" onclick="handleLeftClick()">
                     <i class="fa-solid fa-arrow-left"></i>
                 </button>
-                <button id="right-button" onclick="handleRightClick()">
+                <button class="cards__buttons--right" (click)="handleRightClick()">
                     <i class="fa-solid fa-arrow-right"></i>
                 </button>
             </div>
