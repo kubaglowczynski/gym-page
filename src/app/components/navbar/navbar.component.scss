@@ -26,8 +26,26 @@
         color: white;
         text-decoration: none;
         margin-right: 3vw;
+        position: relative;
+        transition: color 0.3s;
+        &:hover{
+            color: rgba(white, 0.6);
+        }
+        &:hover .link__border{
+            width: 100%;
+        }
         @media only screen and (max-width: 640px) {
             display: none;
+        }
+        .link__border{
+            width: 0;
+            height: 3px;
+            position: absolute;
+            top:100%;
+            left: 0;
+            background: linear-gradient(90deg, transparent, #F5DEB3);
+            transition: width 0.3s;
+            z-index: 99;
         }
     }
     img{
