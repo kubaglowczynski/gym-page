@@ -8,13 +8,13 @@
     justify-content: space-around;
     align-items: center;
 
-    @media only screen and (max-width: 640px) {
+    @media only screen and (max-width: 900px) {
         flex-direction: column;
     }
 
     .socials{
         width: 30%;
-        @media only screen and (max-width: 640px) {
+        @media only screen and (max-width: 900px) {
             width: 90%;
         }
         &__img{
@@ -27,6 +27,7 @@
         }
         &__links{
             font-size: 2rem;
+            cursor: pointer;
             i{
                 margin-right: 10px;
             }
@@ -34,20 +35,34 @@
         &__mainparagraph{
             color: rgba(#252525, 0.6);
             font-weight: 500;
-            @media only screen and (max-width: 640px) {
+            @media only screen and (max-width: 900px) {
                 display: none;
+            }
+        }
+        &__paragraph{
+            a{
+                color: black;
             }
         }
     }
     .pages{
         display: flex;
         flex-direction: column;
-        @media only screen and (max-width: 640px) {
+        align-items: center;
+        @media only screen and (max-width: 900px) {
             display: none;
+        }
+        a{
+            margin: 5px;
+            text-decoration: none;
+            color: black;
+            &:hover{
+                color: lighten(black, 40%);
+            }
         }
     }
     .openinghours{
-        @media only screen and (max-width: 640px) {
+        @media only screen and (max-width: 900px) {
             display: none;
         }
     }
