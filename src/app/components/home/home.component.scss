@@ -1,5 +1,6 @@
 .home{
     margin-top: 10vh;
+    background: rgba(184,218,218,1);
 @media only screen and (max-width: 640px) {
     margin-top: 7vh;
 }
@@ -75,7 +76,6 @@
     display: grid;
     place-content: center;
     filter: grayscale(80%);
-    cursor: pointer;
 
     &:hover{
       filter: grayscale(0%);
@@ -124,7 +124,7 @@
     }
     .gallery{
       width: 60%;
-      background: url("https://pbs.twimg.com/media/FuHMohoWwAAhm0t?format=jpg&name=medium");
+      background: rgba(#fff, 0.5);
       background-size: cover;
 
       display: grid;
@@ -367,7 +367,7 @@
   }
   .newssection{
     height: 40vh;
-    background: url("https://pbs.twimg.com/media/FueKyKDXsAAM4Ci?format=jpg&name=4096x4096");
+    background: rgba(184,218,218,1);
     background-size: cover;
     background-position: center;
     &__title{
