@@ -10,6 +10,13 @@ h1{
     &__posts{
         margin: 50px;
         width: 40vw;
+        @media only screen and (max-width: 640px) {
+            margin: 3%;
+            width: 90%;
+        }
+    }
+    @media only screen and (max-width: 640px) {
+        flex-direction: column;
     }
 }
 .posts__post{
