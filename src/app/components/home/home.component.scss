@@ -153,7 +153,7 @@
           border-radius: 5px;
         }
         .card--little {
-          width: 12vmin;
+          width: 16vmin;
           border-radius: 2vmin;
           left: 50%;
           top: 50%;
@@ -204,7 +204,7 @@
   .cards,
   .cards__group,
   .card--big {  
-      width: 30vmin;
+      width: 40vmin;
       @media only screen and (max-width: 640px) {
         flex-direction: column;
         width: 40vmin;
@@ -370,6 +370,9 @@
     background: rgba(184,218,218,1);
     background-size: cover;
     background-position: center;
+    @media only screen and (max-width: 640px) {
+      height: 25vh;
+    }
     &__title{
       font-size: 2.5rem;
       font-weight: 800;
@@ -392,11 +395,29 @@
     backdrop-filter: blur(2px);
     background-color: rgba(#fff, 0.5);
     &__date{
+      font-size: 1vw;
       border-radius: 5px;
       display: flex;
       justify-content: center;
       align-items: center;
-      background-color: red;
+      background-color: rgba(50, 50, 50, 0.50);
       color: white;
+    }
+    &__title{
+      font-size: 1.5vw;
+      @media only screen and (max-width: 640px) {
+        font-size: 2vw;
+      }
+    }
+    &__paragraph{
+      font-size: 1vw;
+      @media only screen and (max-width: 640px) {
+        font-size: 1.5vw;
+      }
+    }
+    &__readmore{
+      @media only screen and (max-width: 640px) {
+        font-size: 2vw;
+      }
     }
   }
