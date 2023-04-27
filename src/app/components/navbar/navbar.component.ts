@@ -13,7 +13,7 @@ export class NavbarComponent {
   linkUrl: string = 'https://gymliftlab.netlify.app/';
 
   openLink() {
-    window.open(this.linkUrl);
+    window.open(this.linkUrl, '_self');
   }
 
   onClick(): void{
