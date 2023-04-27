@@ -49,6 +49,7 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
+  cursor: pointer;
   @media only screen and (max-width: 640px) {
     flex-direction: column;
     height: 1000px;
@@ -429,6 +430,7 @@
     color: #fff;
     @media only screen and (max-width: 640px) {
       display: flex;
+      align-items: center;
       justify-content: space-around;
       font-size: 2.5vw;
     }

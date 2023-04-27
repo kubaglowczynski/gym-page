@@ -23,6 +23,13 @@ export class NavbarComponent {
     };
   }
 
+  scrollTo(): void{
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+  })
+  }
+
   hideLinks(): void{
     this.styleMobileLinks = {
       display: 'none'

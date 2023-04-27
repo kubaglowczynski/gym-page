@@ -3,3 +3,32 @@ h1{
     font-size: 3rem;
     padding: 50px;
 }
+.img{
+    width: 50vw;
+    box-shadow: 0 0 10px #252525;
+    @media only screen and (max-width: 1200px) {
+        width: 90vw;
+    }
+}
+.info{
+    padding: 50px;
+    font-size: 1.1vw;
+    @media only screen and (max-width: 1200px) {
+        font-size: 2vw;
+        width: 90%;
+    }
+}
+.offer{
+    hr{
+        padding: 2vh 0;
+        border: none;
+    }
+    &__cardio,&__strength,&__spinning,&__sauna,&__presonaltraining,&__shop{
+        display: flex;
+        align-items: center;
+        padding: 50px;
+        @media only screen and (max-width: 1200px) {
+            flex-direction: column;
+        }
+    }
+}

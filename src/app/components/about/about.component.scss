@@ -3,3 +3,20 @@ h1{
     font-size: 3rem;
     padding: 50px;
 }
+.about__main{
+    display: flex;
+    align-items: center;
+.mainimg{
+    width: 60vw;
+    border-radius: 0 50px 50px 0;
+    box-shadow: 0 0 5px black;
+}
+.info{
+    padding: 10px;
+    font-size: 1.5vw;
+    hr{
+        padding: 2vh 0;
+        border: none;
+    }
+}
+}
