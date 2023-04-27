@@ -10,6 +10,11 @@ export class NavbarComponent {
   style = {};
   styleMobileLinks = {};
   toggle = false;
+  linkUrl: string = 'https://gymliftlab.netlify.app/';
+
+  openLink() {
+    window.open(this.linkUrl);
+  }
 
   onClick(): void{
     this.toggle = !this.toggle;

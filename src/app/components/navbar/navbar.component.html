@@ -13,14 +13,15 @@
         <a routerLink="/contact"><span class="link__border"></span>Contact</a>
     </div>
     <button (click)="onClick()"><i class="fa-solid fa-bars"></i></button>
+    <div class="mobile-homebtn" (click)="openLink()"></div>
 </div>
-<div class="mobile-links" [ngStyle]="styleMobileLinks">
-    <div (click)="hideLinks()" routerLink="/" class="mobile-link">Home</div>
-    <div (click)="hideLinks()" routerLink="/news" class="mobile-link">News</div>
-    <div (click)="hideLinks()" routerLink="/about" class="mobile-link">About</div>
-    <div (click)="hideLinks()" routerLink="/offer" class="mobile-link">Offer</div>
-    <div (click)="hideLinks()" routerLink="/schedule" class="mobile-link">Schedule</div>
-    <div (click)="hideLinks()" routerLink="/pricing" class="mobile-link">Pricing</div>
-    <div (click)="hideLinks()" routerLink="/contact" class="mobile-link">Contact</div>
-</div>
+    <div class="mobile-links" [ngStyle]="styleMobileLinks">
+        <div (click)="hideLinks()" routerLink="/" class="mobile-link">Home</div>
+        <div (click)="hideLinks()" routerLink="/news" class="mobile-link">News</div>
+        <div (click)="hideLinks()" routerLink="/about" class="mobile-link">About</div>
+        <div (click)="hideLinks()" routerLink="/offer" class="mobile-link">Offer</div>
+        <div (click)="hideLinks()" routerLink="/schedule" class="mobile-link">Schedule</div>
+        <div (click)="hideLinks()" routerLink="/pricing" class="mobile-link">Pricing</div>
+        <div (click)="hideLinks()" routerLink="/contact" class="mobile-link">Contact</div>
+    </div>
 </div>
