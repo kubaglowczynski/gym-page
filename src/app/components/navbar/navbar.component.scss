@@ -52,6 +52,7 @@
         width: 18vh;
         margin-left: 2vw;
         box-shadow: 0 0 10px gray;
+        cursor: pointer;
         @media only screen and (max-width: 640px) {
             display: none;
         }
