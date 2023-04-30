@@ -3,3 +3,16 @@ h1{
     font-size: 3rem;
     padding: 50px;
 }
+.schedule{
+    padding: 5vh 0;
+    display: grid;
+    place-items: center;
+    &__days{
+        padding: 20px;
+
+        .daybtn{
+            margin: 0 10px;
+            cursor: pointer;
+        }
+    }
+}

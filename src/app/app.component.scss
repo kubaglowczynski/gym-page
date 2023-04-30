@@ -1,0 +1,28 @@
+.lessons{
+    user-select: none;
+    padding: 10px 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 2fr) 1fr;
+    margin: 20px;
+    background-color: antiquewhite;
+    border-radius: 50px;
+}
+.lesson_example{
+    border: 1px solid black;
+    padding: 5px;
+    display: grid;
+    place-content: center;
+}
+.template{
+    font-size: 0.7rem;
+    color: red;
+}
+.btn{
+    grid-row: span 2;
+    background-color: #fff;
+    cursor: pointer;
+    &:hover{
+        background-color: black;
+        color: white;
+    }
+}

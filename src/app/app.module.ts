@@ -13,6 +13,12 @@ import { OfferComponent } from './components/offer/offer.component';
 import { ScheduleComponent } from './components/schedule/schedule.component';
 import { PricingComponent } from './components/pricing/pricing.component';
 import { ContactComponent } from './components/contact/contact.component';
+import { MondayComponent } from './components/schedule/monday/monday.component';
+import { TuesdayComponent } from './components/schedule/tuesday/tuesday.component';
+import { WednesdayComponent } from './components/schedule/wednesday/wednesday.component';
+import { ThursdayComponent } from './components/schedule/thursday/thursday.component';
+import { FridayComponent } from './components/schedule/friday/friday.component';
+import { SaturdayComponent } from './components/schedule/saturday/saturday.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +32,13 @@ import { ContactComponent } from './components/contact/contact.component';
     OfferComponent,
     ScheduleComponent,
     PricingComponent,
-    ContactComponent
+    ContactComponent,
+    MondayComponent,
+    TuesdayComponent,
+    WednesdayComponent,
+    ThursdayComponent,
+    FridayComponent,
+    SaturdayComponent
   ],
   imports: [
     BrowserModule,

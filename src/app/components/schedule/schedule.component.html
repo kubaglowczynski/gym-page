@@ -1,1 +1,19 @@
 <h1>SCHEDULE</h1>
+<div class="schedule">
+    <div class="schedule__title"></div>
+    <div class="schedule__days">
+        <button class="daybtn" (click)="setMonday()">Monday</button>
+        <button class="daybtn" (click)="setTuesday()">Tuesday</button>
+        <button class="daybtn" (click)="setWednesday()">Wednesday</button>
+        <button class="daybtn" (click)="setThursday()">Thursday</button>
+        <button class="daybtn" (click)="setFriday()">Friday</button>
+        <button class="daybtn" (click)="setSaturday()">Saturday</button>
+    </div>
+    <div class="schedule__classes"></div>
+    <app-monday *ngIf="isMonday"></app-monday>
+    <app-tuesday *ngIf="isTuesday"></app-tuesday>
+    <app-wednesday *ngIf="isWednesday"></app-wednesday>
+    <app-thursday *ngIf="isThursday"></app-thursday>
+    <app-friday *ngIf="isFriday"></app-friday>
+    <app-saturday *ngIf="isSaturday"></app-saturday>
+</div>
