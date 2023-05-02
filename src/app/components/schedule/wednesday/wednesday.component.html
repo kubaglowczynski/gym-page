@@ -7,6 +7,7 @@
     <div class="lesson_example">12 am - 1 pm</div>
     <div class="lesson_example">Body Building</div>
     <div class="lesson_example">Lionel Villa</div>
+    <div class="lesson_expired" *ngIf="bodybuildingIsExpired">EXPIRED</div>
 </div>
 <div class="lessons yoga">
     <div class="lesson_example template">Date</div>
@@ -16,6 +17,7 @@
     <div class="lesson_example">2 pm - 3 pm</div>
     <div class="lesson_example">Yoga</div>
     <div class="lesson_example">Patrue Rumburaczek</div>
+    <div class="lesson_expired" *ngIf="yogaIsExpired">EXPIRED</div>
 </div>
 <div class="lessons">
     <div class="lesson_example template">Date</div>
@@ -25,4 +27,5 @@
     <div class="lesson_example">6 pm - 8 pm</div>
     <div class="lesson_example">Spinning</div>
     <div class="lesson_example">Gary Adams</div>
+    <div class="lesson_expired" *ngIf="spinningIsExpired">EXPIRED</div>
 </div>

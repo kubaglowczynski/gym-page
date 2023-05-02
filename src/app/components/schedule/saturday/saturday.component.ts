@@ -19,7 +19,7 @@ export class SaturdayComponent {
   }
 
   constructor(){
-    if(this.currentDayOfWeek === 2 && this.currentHour >= 9){
+    if(this.currentDayOfWeek === 6 && this.currentHour >= 9){
       this.footballIsExpired = true;
     }
 
