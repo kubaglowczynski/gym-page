@@ -3,11 +3,11 @@
     <div class="schedule__title"></div>
     <div class="schedule__days">
         <button [ngStyle]="mondayBtnStyle" class="daybtn" (click)="setMonday()">Monday</button>
-        <button class="daybtn" (click)="setTuesday()">Tuesday</button>
-        <button class="daybtn" (click)="setWednesday()">Wednesday</button>
-        <button class="daybtn" (click)="setThursday()">Thursday</button>
-        <button class="daybtn" (click)="setFriday()">Friday</button>
-        <button class="daybtn" (click)="setSaturday()">Saturday</button>
+        <button [ngStyle]="tuesdayBtnStyle" class="daybtn" (click)="setTuesday()">Tuesday</button>
+        <button [ngStyle]="wednesdayBtnStyle" class="daybtn" (click)="setWednesday()">Wednesday</button>
+        <button [ngStyle]="thursdayBtnStyle" class="daybtn" (click)="setThursday()">Thursday</button>
+        <button [ngStyle]="fridayBtnStyle" class="daybtn" (click)="setFriday()">Friday</button>
+        <button [ngStyle]="saturdayBtnStyle" class="daybtn" (click)="setSaturday()">Saturday</button>
     </div>
     <div class="schedule__classes"></div>
     <app-monday *ngIf="isMonday"></app-monday>

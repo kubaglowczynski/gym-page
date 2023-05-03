@@ -13,6 +13,11 @@ export class ScheduleComponent {
   isFriday:boolean = false;
   isSaturday:boolean = false;
   mondayBtnStyle = {};
+  tuesdayBtnStyle = {};
+  wednesdayBtnStyle = {};
+  thursdayBtnStyle = {};
+  fridayBtnStyle = {};
+  saturdayBtnStyle = {};
 
   currentDayOfWeek: number = new Date().getDay();
 
@@ -43,6 +48,11 @@ export class ScheduleComponent {
     this.isFriday = false;
     this.isSaturday = false;
     this.mondayBtnStyle = {backgroundColor: '#b2b2b2'};
+    this.tuesdayBtnStyle = {backgroundColor: '#f8f8f8'};
+    this.wednesdayBtnStyle = {backgroundColor: '#f8f8f8'};
+    this.thursdayBtnStyle = {backgroundColor: '#f8f8f8'};
+    this.fridayBtnStyle = {backgroundColor: '#f8f8f8'};
+    this.saturdayBtnStyle = {backgroundColor: '#f8f8f8'};
   }
 
   setTuesday() {  
@@ -52,7 +62,12 @@ export class ScheduleComponent {
     this.isThursday = false;
     this.isFriday = false;
     this.isSaturday = false;
-    this.mondayBtnStyle = {backgroundColor: '#f8f8f8'}; 
+    this.mondayBtnStyle = {backgroundColor: '#f8f8f8'};
+    this.tuesdayBtnStyle = {backgroundColor: '#b2b2b2'};
+    this.wednesdayBtnStyle = {backgroundColor: '#f8f8f8'};
+    this.thursdayBtnStyle = {backgroundColor: '#f8f8f8'};
+    this.fridayBtnStyle = {backgroundColor: '#f8f8f8'};
+    this.saturdayBtnStyle = {backgroundColor: '#f8f8f8'};
   }
 
   setWednesday() {  
@@ -63,6 +78,11 @@ export class ScheduleComponent {
     this.isFriday = false;
     this.isSaturday = false;
     this.mondayBtnStyle = {backgroundColor: '#f8f8f8'};
+    this.tuesdayBtnStyle = {backgroundColor: '#f8f8f8'};
+    this.wednesdayBtnStyle = {backgroundColor: '#b2b2b2'};
+    this.thursdayBtnStyle = {backgroundColor: '#f8f8f8'};
+    this.fridayBtnStyle = {backgroundColor: '#f8f8f8'};
+    this.saturdayBtnStyle = {backgroundColor: '#f8f8f8'};
   }
 
   setThursday() {  
@@ -73,6 +93,11 @@ export class ScheduleComponent {
     this.isFriday = false;
     this.isSaturday = false;
     this.mondayBtnStyle = {backgroundColor: '#f8f8f8'};
+    this.tuesdayBtnStyle = {backgroundColor: '#f8f8f8'};
+    this.wednesdayBtnStyle = {backgroundColor: '#f8f8f8'};
+    this.thursdayBtnStyle = {backgroundColor: '#b2b2b2'};
+    this.fridayBtnStyle = {backgroundColor: '#f8f8f8'};
+    this.saturdayBtnStyle = {backgroundColor: '#f8f8f8'};
   }
   setFriday() {  
     this.isMonday = false;
@@ -82,6 +107,11 @@ export class ScheduleComponent {
     this.isFriday = true;
     this.isSaturday = false;
     this.mondayBtnStyle = {backgroundColor: '#f8f8f8'};
+    this.tuesdayBtnStyle = {backgroundColor: '#f8f8f8'};
+    this.wednesdayBtnStyle = {backgroundColor: '#f8f8f8'};
+    this.thursdayBtnStyle = {backgroundColor: '#f8f8f8'};
+    this.fridayBtnStyle = {backgroundColor: '#b2b2b2'};
+    this.saturdayBtnStyle = {backgroundColor: '#f8f8f8'};
   }
   setSaturday() {  
     this.isMonday = false;
@@ -91,5 +121,10 @@ export class ScheduleComponent {
     this.isFriday = false;
     this.isSaturday = true;
     this.mondayBtnStyle = {backgroundColor: '#f8f8f8'};
+    this.tuesdayBtnStyle = {backgroundColor: '#f8f8f8'};
+    this.wednesdayBtnStyle = {backgroundColor: '#f8f8f8'};
+    this.thursdayBtnStyle = {backgroundColor: '#f8f8f8'};
+    this.fridayBtnStyle = {backgroundColor: '#f8f8f8'};
+    this.saturdayBtnStyle = {backgroundColor: '#b2b2b2'};
   }
 }
