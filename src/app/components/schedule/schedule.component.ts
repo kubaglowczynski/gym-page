@@ -12,6 +12,7 @@ export class ScheduleComponent {
   isThursday:boolean = false;
   isFriday:boolean = false;
   isSaturday:boolean = false;
+  mondayBtnStyle = {};
 
   currentDayOfWeek: number = new Date().getDay();
 
@@ -41,6 +42,7 @@ export class ScheduleComponent {
     this.isThursday = false;
     this.isFriday = false;
     this.isSaturday = false;
+    this.mondayBtnStyle = {backgroundColor: '#b2b2b2'};
   }
 
   setTuesday() {  
@@ -49,7 +51,8 @@ export class ScheduleComponent {
     this.isWednesday = false;
     this.isThursday = false;
     this.isFriday = false;
-    this.isSaturday = false; 
+    this.isSaturday = false;
+    this.mondayBtnStyle = {backgroundColor: '#f8f8f8'}; 
   }
 
   setWednesday() {  
@@ -59,6 +62,7 @@ export class ScheduleComponent {
     this.isThursday = false;
     this.isFriday = false;
     this.isSaturday = false;
+    this.mondayBtnStyle = {backgroundColor: '#f8f8f8'};
   }
 
   setThursday() {  
@@ -68,6 +72,7 @@ export class ScheduleComponent {
     this.isThursday = true;
     this.isFriday = false;
     this.isSaturday = false;
+    this.mondayBtnStyle = {backgroundColor: '#f8f8f8'};
   }
   setFriday() {  
     this.isMonday = false;
@@ -76,6 +81,7 @@ export class ScheduleComponent {
     this.isThursday = false;
     this.isFriday = true;
     this.isSaturday = false;
+    this.mondayBtnStyle = {backgroundColor: '#f8f8f8'};
   }
   setSaturday() {  
     this.isMonday = false;
@@ -84,5 +90,6 @@ export class ScheduleComponent {
     this.isThursday = false;
     this.isFriday = false;
     this.isSaturday = true;
+    this.mondayBtnStyle = {backgroundColor: '#f8f8f8'};
   }
 }

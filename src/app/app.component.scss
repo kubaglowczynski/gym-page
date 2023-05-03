@@ -17,6 +17,7 @@
         width: 70vw;
         height: 10vh;
         margin: 2vw;
+        padding: 10px 30px;
         border-radius: 5px;
     }
 
@@ -44,15 +45,15 @@
     display: grid;
     place-content: center;
     font-size: 1.2vw;
-    @media only screen and (max-width: 900px) {
-        font-size: 2vw;
+    @media only screen and (max-width: 620px) {
+        font-size: 2.4vw;
     }
 }
 .template{
     font-size: 1vw;
     color: rgba(0,0,0,0.5);
-    @media only screen and (max-width: 900px) {
-        font-size: 1.7vw;
+    @media only screen and (max-width: 620px) {
+        font-size: 2vw;
     }
 }
 .btn{

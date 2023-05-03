@@ -2,7 +2,7 @@
 <div class="schedule">
     <div class="schedule__title"></div>
     <div class="schedule__days">
-        <button class="daybtn" (click)="setMonday()">Monday</button>
+        <button [ngStyle]="mondayBtnStyle" class="daybtn" (click)="setMonday()">Monday</button>
         <button class="daybtn" (click)="setTuesday()">Tuesday</button>
         <button class="daybtn" (click)="setWednesday()">Wednesday</button>
         <button class="daybtn" (click)="setThursday()">Thursday</button>

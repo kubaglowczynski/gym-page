@@ -24,7 +24,7 @@ h1{
     background-color: #f8f8f8;
     margin: 5px 10px;
     cursor: pointer;
-    &:hover, &:focus{
+    &:hover{
         background-color: #b2b2b2;
     }
     @media only screen and (max-width: 900px) {
