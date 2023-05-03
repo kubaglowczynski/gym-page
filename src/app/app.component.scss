@@ -13,6 +13,13 @@
         scale: 1.05;
     }
 
+    @media only screen and (max-width: 900px) {
+        width: 70vw;
+        height: 10vh;
+        margin: 2vw;
+        border-radius: 5px;
+    }
+
     .lesson_expired{
         position: absolute;
         top: 0;
@@ -25,6 +32,10 @@
         place-content: center;
         color: #fff;
         font-size: 2vw;
+        @media only screen and (max-width: 900px) {
+            font-size: 4vw;
+            border-radius: 5px;
+        }
     }
 }
 .lesson_example{
@@ -33,17 +44,24 @@
     display: grid;
     place-content: center;
     font-size: 1.2vw;
+    @media only screen and (max-width: 900px) {
+        font-size: 2vw;
+    }
 }
 .template{
     font-size: 1vw;
     color: rgba(0,0,0,0.5);
+    @media only screen and (max-width: 900px) {
+        font-size: 1.7vw;
+    }
 }
 .btn{
     grid-row: span 2;
     background-color: #fff;
     cursor: pointer;
+    transition: all 0.2s ease-in;
     &:hover{
-        background-color: black;
+        background-color: #b2b2b2;
         color: white;
     }
 }

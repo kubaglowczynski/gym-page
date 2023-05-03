@@ -28,6 +28,9 @@
         margin-right: 3vw;
         position: relative;
         transition: color 0.3s;
+        padding-top: 10px;
+        padding-right: 2px;
+        padding-left: 1px;
         &:hover{
             color: rgba(white, 0.6);
         }

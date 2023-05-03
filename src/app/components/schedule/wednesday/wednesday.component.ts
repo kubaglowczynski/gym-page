@@ -13,13 +13,6 @@ export class WednesdayComponent {
   yogaIsExpired:boolean = false;
   spinningIsExpired:boolean = false;
 
-  addDivWithClass(className: string) {
-    const div = document.createElement("div");
-    div.textContent = "expired";
-    div.classList.add(className);
-    document.body.appendChild(div);
-  }
-
   constructor(){
     if(this.currentDayOfWeek === 3 && this.currentHour >= 12){
       this.bodybuildingIsExpired = true;
@@ -31,12 +24,6 @@ export class WednesdayComponent {
 
     if(this.currentDayOfWeek === 3 && this.currentHour >= 18){
       this.spinningIsExpired = true;
-      }
-
-    if(this.bodybuildingIsExpired === true ||
-      this.yogaIsExpired === true ||
-      this.spinningIsExpired === true){
-        this.addDivWithClass("lesson_expired");
       }
   }
 }

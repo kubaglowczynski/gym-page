@@ -14,13 +14,6 @@ export class ThursdayComponent {
   footballIsExpired:boolean = false;
   mmaIsExpired:boolean = false;
 
-  addDivWithClass(className: string) {
-    const div = document.createElement("div");
-    div.textContent = "expired";
-    div.classList.add(className);
-    document.body.appendChild(div);
-  }
-
   constructor(){
     if(this.currentDayOfWeek === 4 && this.currentHour >= 10){
       this.runningIsExpired = true;
@@ -37,12 +30,5 @@ export class ThursdayComponent {
     if(this.currentDayOfWeek === 4 && this.currentHour >= 20){
       this.mmaIsExpired = true;
     }
-
-    if(this.runningIsExpired === true ||
-      this.spinningIsExpired === true ||
-      this.footballIsExpired === true ||
-      this.mmaIsExpired === true){
-        this.addDivWithClass("lesson_expired");
-      }
   }
 }
