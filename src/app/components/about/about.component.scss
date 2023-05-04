@@ -3,6 +3,9 @@ h1{
     font-size: 3rem;
     padding: 50px;
 }
+.about{
+    animation: display 1s ease-in;
+}
 .about__main{
     display: flex;
     align-items: center;
@@ -87,6 +90,15 @@ h1{
         opacity: 0;
     }
     100%{
+        opacity: 1;
+    }
+}
+@keyframes display {
+    from {
+        opacity: 0;
+    }
+
+    to {
         opacity: 1;
     }
 }
