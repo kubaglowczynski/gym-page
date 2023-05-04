@@ -17,10 +17,21 @@ h1{
     img{
         margin-top: 5vw;
         width: 28vw;
-        border-radius: 5px 50px;
+        height: 40vw;
+        border-radius: 5px 5px 5px 50px;
     }
     .info{
-        margin-left: 10vw;
+        margin-top: 5vw;
+        margin-left: 2vw;
+        width: 28vw;
+        height: 40vw;
+        border-radius: 5px 50px 5px 5px;
+        background-color: rgba(255, 255, 255, 0.7);
+        display: grid;
+        place-content: center;
+        li{
+            list-style-type: "✔️";
+        }
     }
 }
 .offers{
@@ -60,7 +71,7 @@ h1{
     }
 }
 .sectionfaq{
-    background-color: aquamarine;
+    background-color: #2b2b2b;
     padding: 2vw 0;
 }
 .faq{
