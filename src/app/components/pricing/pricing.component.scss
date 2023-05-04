@@ -3,3 +3,53 @@ h1{
     font-size: 3rem;
     padding: 50px;
 }
+.main{
+    background: url("https://cdn.pixabay.com/photo/2015/07/02/10/27/training-828764_1280.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.mainoffer{
+    margin: 0 5vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img{
+        width: 28vw;
+    }
+    .info{
+        margin-left: 10vw;
+    }
+}
+.offers{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 5vw 10vw;
+    &__offer{
+        width: 15vw;
+        height: 20vw;
+        background: rgb(110,109,126);
+        cursor: pointer;
+        .title{
+            font-size: 1.5vw;
+        }
+        .price{
+            font-size: 3.5vw;
+            color: #F5DEB3;
+            .oldprice{
+                text-decoration: line-through;
+                color: red;
+            }
+        }
+        .btn{
+            padding: 3px;
+            cursor: pointer;
+        }
+        &:hover{
+            box-shadow: 0 0 10px black;
+        }
+    }
+}
+.faq{
+    color: white;
+}
