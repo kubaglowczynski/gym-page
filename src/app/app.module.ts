@@ -28,7 +28,6 @@ import { SaturdayComponent } from './components/schedule/saturday/saturday.compo
     FooterComponent,
     LivesectionComponent,
     NewsComponent,
-    AboutComponent,
     OfferComponent,
     ScheduleComponent,
     PricingComponent,
@@ -42,7 +41,8 @@ import { SaturdayComponent } from './components/schedule/saturday/saturday.compo
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    AboutComponent
   ],
   providers: [],
   bootstrap: [AppComponent]
