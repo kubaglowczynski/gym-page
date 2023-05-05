@@ -11,6 +11,8 @@ export class AboutComponent implements AfterViewInit {
   constructor() {}
 
   ngAfterViewInit() {
-    this.isLoading = false;
+    setTimeout(() => {
+      this.isLoading = false;
+    }, 100);
   }
 }

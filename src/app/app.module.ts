@@ -19,6 +19,7 @@ import { WednesdayComponent } from './components/schedule/wednesday/wednesday.co
 import { ThursdayComponent } from './components/schedule/thursday/thursday.component';
 import { FridayComponent } from './components/schedule/friday/friday.component';
 import { SaturdayComponent } from './components/schedule/saturday/saturday.component';
+import { LoaderComponent } from './components/loader/loader.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +39,8 @@ import { SaturdayComponent } from './components/schedule/saturday/saturday.compo
     ThursdayComponent,
     FridayComponent,
     SaturdayComponent,
-    AboutComponent
+    AboutComponent,
+    LoaderComponent
   ],
   imports: [
     BrowserModule,
