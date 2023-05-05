@@ -37,12 +37,12 @@ import { SaturdayComponent } from './components/schedule/saturday/saturday.compo
     WednesdayComponent,
     ThursdayComponent,
     FridayComponent,
-    SaturdayComponent
+    SaturdayComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
-    AboutComponent
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

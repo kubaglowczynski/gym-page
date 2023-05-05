@@ -1,13 +1,14 @@
-import { Component } from '@angular/core';
-import { NgOptimizedImage } from '@angular/common'
+import { Component, AfterViewInit } from '@angular/core';
 
 @Component({
   selector: 'app-about',
-  standalone: true,
-  imports: [NgOptimizedImage],
   templateUrl: './about.component.html',
   styleUrls: ['./about.component.scss']
 })
-export class AboutComponent {
+export class AboutComponent implements AfterViewInit {
+  isLoading = true;
 
+  ngAfterViewInit() {
+    this.isLoading = false;
+  }
 }
