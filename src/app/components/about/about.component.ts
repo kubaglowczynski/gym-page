@@ -8,6 +8,8 @@ import { Component, AfterViewInit } from '@angular/core';
 export class AboutComponent implements AfterViewInit {
   isLoading = true;
 
+  constructor() {}
+
   ngAfterViewInit() {
     this.isLoading = false;
   }
