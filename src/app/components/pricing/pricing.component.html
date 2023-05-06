@@ -1,56 +1,61 @@
-<h1>PRICING</h1>
-<div class="main">
-    <div class="mainoffer">
-        <img src="https://pbs.twimg.com/media/FvR6CGjWAAA6_Mf?format=jpg&name=4096x4096" alt="">
-        <div class="info">
-            <p class="title">Buy monthly pass</p>
-            <ul>
-                <li>50% discount</li>
-                <li>whole month for only $30</li>
-                <li>free termination of the contract</li>
-                <li>everything included in the price</li>
-                <li>taking care of your health</li>
-            </ul>
-            <button>GET MONTHLY PASS</button>
-        </div>
-    </div>
-    <div class="offers">
-        <div class="offers__offer">
-            <div class="title">first training</div>
-            <div class="price">0$</div>
-            <button class="btn">SHOW MORE</button>
-        </div>
-        <div class="offers__offer">
-            <div class="title">day pass</div>
-            <div class="price">10$</div>
-            <button class="btn">SHOW MORE</button>
-        </div>
-        <div class="offers__offer">
-            <div class="title">mounthly pass</div>
-            <div class="price"><span class="oldprice">60$ </span><p>new price </p>30$</div>
-            <button class="btn">SHOW MORE</button>
-        </div>
-        <div class="offers__offer">
-            <div class="title">year pass</div>
-            <div class="price">500$</div>
-            <button class="btn">SHOW MORE</button>
-        </div>
-        <div class="offers__offer">
-            <div class="title">year pass<br>for students</div>
-            <div class="price">300$</div>
-            <button class="btn">SHOW MORE</button>
-        </div>
-    </div>
+<div class="loader" *ngIf="isLoading">
+    <app-loader></app-loader>
 </div>
-<div class="sectionfaq">
-    <div class="faq">
-        <div class="faq__first--question" (click)="toggleFirstAnswer()">What types of equipment are available at the gym?</div>
-        <div class="faq__first--answer" *ngIf="firstAnswer">We have a variety of equipment, including free weights, weight machines, cardio machines, and functional training equipment like kettlebells and battle ropes.</div>
-        <div class="faq__second--question" (click)="toggleSecondAnswer()">What are the opening hours of the gym?</div>
-        <div class="faq__second--answer" *ngIf="secondAnswer">Our gym is open from 8 am to 10 pm, Monday through Saturday.</div>
-        <div class="faq__third--question" (click)="toggleThirdAnswer()">Is there a dress code in the gym?</div>
-        <div class="faq__third--answer" *ngIf="thirdAnswer">We do not have a strict dress code, but we ask that our members wear appropriate athletic attire and shoes for safety and hygiene reasons.</div>
-        <div class="faq__fourth--question" (click)="toggleFourthAnswer()">Are personal trainers available at the gym?</div>
-        <div class="faq__fourth--answer" *ngIf="fourthAnswer">Yes, we have certified personal trainers available to help you with your fitness goals. You can book a session with them at the front desk or online.</div>
+<div class="endloader" *ngIf="!isLoading">
+    <h1>PRICING</h1>
+    <div class="main">
+        <div class="mainoffer">
+            <img src="https://pbs.twimg.com/media/FvR6CGjWAAA6_Mf?format=jpg&name=4096x4096" alt="">
+            <div class="info">
+                <p class="title">Buy monthly pass</p>
+                <ul>
+                    <li>50% discount</li>
+                    <li>whole month for only $30</li>
+                    <li>free termination of the contract</li>
+                    <li>everything included in the price</li>
+                    <li>taking care of your health</li>
+                </ul>
+                <button>GET MONTHLY PASS</button>
+            </div>
+        </div>
+        <div class="offers">
+            <div class="offers__offer">
+                <div class="title">first training</div>
+                <div class="price">0$</div>
+                <button class="btn">SHOW MORE</button>
+            </div>
+            <div class="offers__offer">
+                <div class="title">day pass</div>
+                <div class="price">10$</div>
+                <button class="btn">SHOW MORE</button>
+            </div>
+            <div class="offers__offer">
+                <div class="title">mounthly pass</div>
+                <div class="price"><span class="oldprice">60$ </span><p>new price </p>30$</div>
+                <button class="btn">SHOW MORE</button>
+            </div>
+            <div class="offers__offer">
+                <div class="title">year pass</div>
+                <div class="price">500$</div>
+                <button class="btn">SHOW MORE</button>
+            </div>
+            <div class="offers__offer">
+                <div class="title">year pass<br>for students</div>
+                <div class="price">300$</div>
+                <button class="btn">SHOW MORE</button>
+            </div>
+        </div>
+    </div>
+    <div class="sectionfaq">
+        <div class="faq">
+            <div class="faq__first--question" (click)="toggleFirstAnswer()">What types of equipment are available at the gym?</div>
+            <div class="faq__first--answer" *ngIf="firstAnswer">We have a variety of equipment, including free weights, weight machines, cardio machines, and functional training equipment like kettlebells and battle ropes.</div>
+            <div class="faq__second--question" (click)="toggleSecondAnswer()">What are the opening hours of the gym?</div>
+            <div class="faq__second--answer" *ngIf="secondAnswer">Our gym is open from 8 am to 10 pm, Monday through Saturday.</div>
+            <div class="faq__third--question" (click)="toggleThirdAnswer()">Is there a dress code in the gym?</div>
+            <div class="faq__third--answer" *ngIf="thirdAnswer">We do not have a strict dress code, but we ask that our members wear appropriate athletic attire and shoes for safety and hygiene reasons.</div>
+            <div class="faq__fourth--question" (click)="toggleFourthAnswer()">Are personal trainers available at the gym?</div>
+            <div class="faq__fourth--answer" *ngIf="fourthAnswer">Yes, we have certified personal trainers available to help you with your fitness goals. You can book a session with them at the front desk or online.</div>
+        </div>
     </div>
 </div>

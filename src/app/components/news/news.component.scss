@@ -7,6 +7,7 @@ h1{
     display: flex;
     justify-content: space-around;
     background-color: #454545;
+    animation: display 0.3s ease-in;
     &__posts{
         margin: 50px;
         width: 50vw;
@@ -93,5 +94,14 @@ h1{
         padding: 2px 2px;
         margin-right: 20px;
         background-color: rgba(#fff,0.3);
+    }
+}
+@keyframes display {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
     }
 }

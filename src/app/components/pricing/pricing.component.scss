@@ -8,6 +8,7 @@ h1{
     background-repeat: no-repeat;
     background-size: cover;
     padding-bottom: 5vw;
+    animation: display 0.3s ease-in;
 }
 .mainoffer{
     margin: 0 5vw;
@@ -101,5 +102,14 @@ h1{
         border: 1px solid black;
         color: black;
         background-color: gray;
+    }
+}
+@keyframes display {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
     }
 }

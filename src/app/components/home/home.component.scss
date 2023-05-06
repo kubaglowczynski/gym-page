@@ -1,6 +1,7 @@
 .home{
     margin-top: 10vh;
     background: #FDFDFD;
+    animation: display 0.3s ease-in;
 @media only screen and (max-width: 640px) {
     margin-top: 7vh;
 }
@@ -440,3 +441,12 @@
       }
     }
   }
+  @keyframes display {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}

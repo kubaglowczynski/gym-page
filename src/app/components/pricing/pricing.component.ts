@@ -1,11 +1,11 @@
-import { Component } from '@angular/core';
+import { Component, AfterViewInit } from '@angular/core';
 
 @Component({
   selector: 'app-pricing',
   templateUrl: './pricing.component.html',
   styleUrls: ['./pricing.component.scss']
 })
-export class PricingComponent {
+export class PricingComponent implements AfterViewInit{
   firstAnswer: boolean = false;
   secondAnswer: boolean = false;
   thirdAnswer: boolean = false;
@@ -45,5 +45,15 @@ export class PricingComponent {
     else{
       this.fourthAnswer = false;
     }
+  }
+
+  isLoading = true;
+
+  constructor() {}
+
+  ngAfterViewInit() {
+    setTimeout(() => {
+      this.isLoading = false;
+    }, 800);
   }
 }

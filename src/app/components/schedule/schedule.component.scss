@@ -7,6 +7,7 @@ h1{
     padding: 5vh 0;
     display: grid;
     place-items: center;
+    animation: display 0.3s ease-in;
     &__days{
         padding: 20px;
         margin: 20px;
@@ -29,5 +30,14 @@ h1{
     }
     @media only screen and (max-width: 900px) {
         width: 90px;
+    }
+}
+@keyframes display {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
     }
 }

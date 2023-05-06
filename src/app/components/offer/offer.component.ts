@@ -13,6 +13,6 @@ export class OfferComponent implements AfterViewInit {
   ngAfterViewInit() {
     setTimeout(() => {
       this.isLoading = false;
-    }, 200);
+    }, 600);
   }
 }
