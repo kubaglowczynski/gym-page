@@ -13,6 +13,6 @@ export class NewsComponent implements AfterViewInit{
   ngAfterViewInit() {
     setTimeout(() => {
       this.isLoading = false;
-    }, 1200);
+    }, 800);
   }
 }

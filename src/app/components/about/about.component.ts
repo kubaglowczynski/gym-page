@@ -13,6 +13,6 @@ export class AboutComponent implements AfterViewInit {
   ngAfterViewInit() {
     setTimeout(() => {
       this.isLoading = false;
-    }, 200);
+    }, 700);
   }
 }
