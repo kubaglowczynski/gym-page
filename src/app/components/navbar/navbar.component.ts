@@ -16,7 +16,7 @@ export class NavbarComponent {
     window.open(this.linkUrl, '_self');
   }
 
-  onClick(): void{
+  onClickMobile(): void{
     this.toggle = !this.toggle;
     this.styleMobileLinks = {
       display: this.toggle ? 'none' : 'flex'

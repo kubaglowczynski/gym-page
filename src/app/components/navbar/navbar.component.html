@@ -12,7 +12,7 @@
         <a (click)="scrollTo()" routerLink="/pricing"><span class="link__border"></span>Pricing</a>
         <a (click)="scrollTo()" routerLink="/contact"><span class="link__border"></span>Contact</a>
     </div>
-    <button (click)="onClick(); scrollTo()"><i class="fa-solid fa-bars"></i></button>
+    <button (click)="onClickMobile(); scrollTo()"><i class="fa-solid fa-bars"></i></button>
     <div class="mobile-homebtn" (click)="openLink()"></div>
 </div>
     <div class="mobile-links" [ngStyle]="styleMobileLinks">
