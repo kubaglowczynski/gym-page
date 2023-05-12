@@ -1,22 +1,27 @@
-<h1>CONTACT</h1>
-<div class="contact">
-    <div class="contact__informations">
-        <h1>We are here for help you! To Shape Your Body.</h1>
-    </div>
-    <div class="contact__form">
-        <form id="contactform">
-            <label for="email">Leave Us Your Info</label>
-            <input name="" type="hidden" id="name" value="">
-            <div>
-            <input name="email" type="email" id="email" placeholder="Type your email" onfocus="this.placeholder=''" onblur="this.placeholder='Type your email'">
-            <input type="text" name="title" id="title" placeholder="Type a subject" onfocus="this.placeholder=''" onblur="this.placeholder='Type a subject'" autocomplete="nope">
-            </div>
-            <textarea name="comment" id="comment" rows="3" placeholder="Type your message" onfocus="this.placeholder=''" onblur="this.placeholder='Type your message'" autocomplete="nope"></textarea>
-            <input value="Send" type="submit" id="submit">
-            <input name="_formsubmit_id" type="text" style="display:none">
-        </form>
-    </div>
-    <div class="contact__map">
-        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12265.793860549127!2d-86.15854!3d39.77449!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x886b50c096c1a0dd%3A0xb2adb91b4f37ef3f!2sLift%20Lab%20Co.!5e0!3m2!1spl!2spl!4v1683915068508!5m2!1spl!2spl" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+<div class="loader" *ngIf="isLoading">
+    <app-loader></app-loader>
+</div>
+<div class="endloader" *ngIf="!isLoading">
+    <h1>CONTACT</h1>
+    <div class="contact">
+        <div class="contact__informations">
+            <h1>We are here for help you! <br>To strengthen your fitness.</h1>
+        </div>
+        <div class="contact__form">
+            <form id="contactform">
+                <label for="email">Leave Us Your Info</label>
+                <input name="" type="hidden" id="name" value="">
+                <div>
+                <input name="email" type="email" id="email" placeholder="Type your email" onfocus="this.placeholder=''" onblur="this.placeholder='Type your email'">
+                <input type="text" name="title" id="title" placeholder="Type a subject" onfocus="this.placeholder=''" onblur="this.placeholder='Type a subject'" autocomplete="nope">
+                </div>
+                <textarea name="comment" id="comment" rows="3" placeholder="Type your message" onfocus="this.placeholder=''" onblur="this.placeholder='Type your message'" autocomplete="nope"></textarea>
+                <input value="Send" type="submit" id="submit">
+                <input name="_formsubmit_id" type="text" style="display:none">
+            </form>
+        </div>
+        <div class="contact__map">
+            <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12265.793860549127!2d-86.15854!3d39.77449!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x886b50c096c1a0dd%3A0xb2adb91b4f37ef3f!2sLift%20Lab%20Co.!5e0!3m2!1spl!2spl!4v1683915068508!5m2!1spl!2spl" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
     </div>
 </div>

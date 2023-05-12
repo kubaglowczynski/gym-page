@@ -7,14 +7,44 @@ h1{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr auto;
+    animation: display 0.3s ease-in;
+    @media only screen and (max-width: 900px) {
+        display: flex;
+        flex-direction: column;
+    }
+    &__form{
+        background-color: #999999;
+        display: grid;
+        place-content: center;
+    }
+    &__informations{
+        background-color: bisque;
+        h1{
+            margin: 0;
+            font-size: 2rem;
+        }
+    }
     &__map{
         grid-column: 1 / -1;
         grid-row: 2;
         width: 100vw;
-        height: 30vw;
+        background-color: black;
+        height: 500px;
+        @media only screen and (max-width: 900px) {
+            height: 300px;
+        }
         .map{
             width: 100%;
             height: 100%;
         }
+    }
+}
+@keyframes display {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
     }
 }
