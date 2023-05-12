@@ -6,18 +6,22 @@
     <div class="contact">
         <div class="contact__informations">
             <h1>We are here for help you! <br>To strengthen your fitness.</h1>
+            <p>At LiftLab, we are dedicated to helping you achieve the body of your dreams. Our expert trainers and nutritionists will work with you to create a personalized fitness and nutrition plan that helps you reach your specific goals.</p>
         </div>
         <div class="contact__form">
-            <form id="contactform">
+            <form class="form">
                 <label for="email">Leave Us Your Info</label>
-                <input name="" type="hidden" id="name" value="">
+                <input name="" type="hidden" class="name" value="">
                 <div>
-                <input name="email" type="email" id="email" placeholder="Type your email" onfocus="this.placeholder=''" onblur="this.placeholder='Type your email'">
-                <input type="text" name="title" id="title" placeholder="Type a subject" onfocus="this.placeholder=''" onblur="this.placeholder='Type a subject'" autocomplete="nope">
+                <input name="email" type="email" class="email" placeholder="Type your email" onfocus="this.placeholder=''" onblur="this.placeholder='Type your email'">
                 </div>
-                <textarea name="comment" id="comment" rows="3" placeholder="Type your message" onfocus="this.placeholder=''" onblur="this.placeholder='Type your message'" autocomplete="nope"></textarea>
-                <input value="Send" type="submit" id="submit">
-                <input name="_formsubmit_id" type="text" style="display:none">
+                <div>
+                <input type="text" name="title" class="title" placeholder="Type a subject" onfocus="this.placeholder=''" onblur="this.placeholder='Type a subject'" autocomplete="nope">
+                </div>
+                <textarea name="message" class="message" rows="3" placeholder="Type your message" onfocus="this.placeholder=''" onblur="this.placeholder='Type your message'" autocomplete="nope"></textarea>
+                <div class="sendbtn">
+                <input value="Send" type="submit" class="btn">
+                </div>
             </form>
         </div>
         <div class="contact__map">
