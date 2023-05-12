@@ -57,13 +57,22 @@
     }
 }
 .btn{
+    position: relative;
     grid-row: span 2;
     background-color: #fff;
     cursor: pointer;
-    transition: all 0.2s ease-in;
+    z-index: 0;
+    transition: 0.4s ease-in;
+    &::before,&::after{
+        position: absolute;
+        content: "";
+        z-index: -1;
+    }
     &:hover{
-        background-color: #b2b2b2;
-        color: white;
+        &:hover{
+            box-shadow: inset -10.5rem 0 0 0 #606060, inset 10.5rem 0 0 0 #606060;
+            color: darken(#fff, 20%);
+        }
     }
 }
 

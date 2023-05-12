@@ -127,6 +127,7 @@ h1{
         cursor: default;
         cursor: pointer;
         transition: all 0.2s ease-in;
+        user-select: none;
         &:hover{
             color: #E0E2DB;
         }
