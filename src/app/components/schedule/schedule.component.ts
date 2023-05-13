@@ -35,6 +35,9 @@ export class ScheduleComponent {
     else if(this.currentDayOfWeek === 5){
       this.setFriday();
     }
+    else if (this.currentDayOfWeek === 6){
+      this.setSaturday();
+    }
     else{
       this.setMonday();
     }
