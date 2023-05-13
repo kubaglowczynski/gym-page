@@ -27,6 +27,13 @@ h1{
             margin: 0;
             font-size: 2rem;
         }
+        .about{
+            &__adress{
+                p{
+                    color: #999999;
+                }  
+            }
+        }
     }
     &__map{
         grid-column: 1 / -1;
@@ -63,6 +70,10 @@ h1{
         height: 4vw;
         margin: 2vw;
     }
+}
+hr{
+    width: 80px;
+    border: 1px solid red;
 }
 @keyframes display {
     from {
