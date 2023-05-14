@@ -23,15 +23,43 @@ h1{
     }
     &__informations{
         background-color: bisque;
-        h1{
-            margin: 0;
+        h2{
+            margin: 40px 20px;
             font-size: 2rem;
         }
+        p{
+            margin: 20px;
+            font-size: 20px;
+        }
         .about{
-            &__adress{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            &__adress, &__openhours, &__info, &__socialmedia{
+                margin: 20px;
+                h4{
+                    font-size: 25px;
+                }
                 p{
                     color: #999999;
-                }  
+                    margin: 0;
+                    font-size: 20px;
+                }
+                hr{
+                    width: 80px;
+                    border: 1px solid #454545;
+                }
+                .icon{
+                    display: grid;
+                    place-content: center;
+                    margin-right: 5px;
+                    margin-top: 5px;
+                    width: 40px;
+                    height: 40px;
+                    color: #000;
+                    background-color: #fff;
+                    border-radius: 50%;
+                    cursor: pointer;
+                }
             }
         }
     }
@@ -49,6 +77,9 @@ h1{
             height: 100%;
         }
     }
+}
+.about__socialmedia p{
+    display: flex;
 }
 .message{
     width: 40vw;
@@ -70,10 +101,6 @@ h1{
         height: 4vw;
         margin: 2vw;
     }
-}
-hr{
-    width: 80px;
-    border: 1px solid red;
 }
 @keyframes display {
     from {
