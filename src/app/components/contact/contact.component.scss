@@ -65,6 +65,11 @@ h1{
                     background-color: #fff;
                     border-radius: 50%;
                     cursor: pointer;
+                    transition: 0.3s ease-in;
+                    &:hover{
+                        color: #fff;
+                        background-color: #000;
+                    }
                 }
             }
         }
@@ -107,9 +112,13 @@ h1{
     justify-content: center;
     align-items: center;
     .btn{
-        width: 20vw;
-        height: 4vw;
+        font-size: 20px;
+        border: none;
+        border-radius: 5px;
+        width: 200px;
+        height: 40px;
         margin: 2vw;
+        cursor: pointer;
     }
 }
 @keyframes display {
