@@ -10,21 +10,10 @@ export class SaturdayComponent {
     currentDayOfWeek: number = new Date().getDay();
     nowHour: Date = new Date();
     currentHour: number = this.nowHour.getHours();
-
-    addDivWithClass(className: string) {
-    const div = document.createElement("div");
-    div.textContent = "expired";
-    div.classList.add(className);
-    document.body.appendChild(div);
-  }
-
-  constructor(){
-    if(this.currentDayOfWeek === 6 && this.currentHour >= 9){
-      this.footballIsExpired = true;
-    }
-
-    if(this.footballIsExpired === true){
-      this.addDivWithClass("lesson_expired");
+    
+    constructor(){
+      if(this.currentDayOfWeek === 6 && this.currentHour >= 9){
+        this.footballIsExpired = true;
       }
     }
-}
+  }
