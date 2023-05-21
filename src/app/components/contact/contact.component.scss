@@ -102,10 +102,26 @@ h1{
     height: 20vw;
     resize: none;
     padding: 10px;
-    font-size: 1.2rem;
+    font-size: 18px;
     &:focus {
         outline: none;
         background-color: darken(#fff, 5%);
+    }
+    @media only screen and (max-width: 900px) {
+        width: 80%;
+        height: 50vw;
+    }
+}
+.topics, .email{
+    height: 30px;
+    width: 240px;
+    font-size: 18px;
+    margin: 10px 5px 10px 0;
+    padding-left: 3px;
+}
+select, input{
+    &:focus {
+        outline: none;
     }
 }
 .sendbtn{
