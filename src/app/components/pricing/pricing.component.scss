@@ -15,11 +15,20 @@ h1{
     display: flex;
     align-items: center;
     justify-content: center;
+    @media only screen and (max-width: 640px) {
+        flex-direction: column;
+        font-size: 13px;
+    }
     img{
         margin-top: 5vw;
         width: 28vw;
         height: 40vw;
         border-radius: 5px 5px 5px 50px;
+        @media only screen and (max-width: 640px) {
+            width: 60vw;
+            height: 80vw;
+            margin: 5vw;
+        }
     }
     .info{
         margin-top: 5vw;
@@ -30,6 +39,11 @@ h1{
         background-color: rgba(255, 255, 255, 0.7);
         display: grid;
         place-content: center;
+        @media only screen and (max-width: 640px) {
+            width: 60vw;
+            height: 80vw;
+            margin: 5vw;
+        }
         li{
             list-style-type: "✔️";
         }
@@ -40,6 +54,9 @@ h1{
     justify-content: space-around;
     align-items: center;
     margin: 5vw 10vw;
+    @media only screen and (max-width: 640px) {
+        flex-direction: column;
+    }
     &__offer{
         width: 15vw;
         height: 20vw;
@@ -48,6 +65,11 @@ h1{
         border-radius: 50px 5px;
         display: grid;
         place-content: center;
+        @media only screen and (max-width: 640px) {
+            width: 60vw;
+            height: 80vw;
+            margin: 5vw;
+        }
         .title{
             font-size: 1.5vw;
         }
