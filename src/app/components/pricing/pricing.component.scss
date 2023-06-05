@@ -15,7 +15,7 @@ h1{
     display: flex;
     align-items: center;
     justify-content: center;
-    @media only screen and (max-width: 640px) {
+    @media only screen and (max-width: 900px) {
         flex-direction: column;
         font-size: 13px;
     }
@@ -24,7 +24,7 @@ h1{
         width: 28vw;
         height: 40vw;
         border-radius: 5px 5px 5px 50px;
-        @media only screen and (max-width: 640px) {
+        @media only screen and (max-width: 900px) {
             width: 60vw;
             height: 80vw;
             margin: 5vw;
@@ -39,7 +39,7 @@ h1{
         background-color: rgba(255, 255, 255, 0.7);
         display: grid;
         place-content: center;
-        @media only screen and (max-width: 640px) {
+        @media only screen and (max-width: 900px) {
             width: 60vw;
             height: 80vw;
             margin: 5vw;
@@ -54,18 +54,18 @@ h1{
     justify-content: space-around;
     align-items: center;
     margin: 5vw 10vw;
-    @media only screen and (max-width: 640px) {
+    @media only screen and (max-width: 900px) {
         flex-direction: column;
     }
     &__offer{
         width: 15vw;
         height: 20vw;
-        background: rgb(110,109,126);
+        background: url("https://img.freepik.com/free-vector/realistic-grain-paper-texture_23-2149103334.jpg?w=1480&t=st=1686006335~exp=1686006935~hmac=03a94e6b11115026d753e350e6cfac2b7829bd9023cf9282931228e8004945bd");
         cursor: pointer;
         border-radius: 50px 5px;
         display: grid;
         place-content: center;
-        @media only screen and (max-width: 640px) {
+        @media only screen and (max-width: 900px) {
             width: 60vw;
             height: 80vw;
             margin: 5vw;
@@ -87,9 +87,17 @@ h1{
         }
         .btn{
             cursor: pointer;
+            background-color: rgba(255, 255, 255, 0.2);
+            border: none;
+            width: 150px;
+            height: 50px;
+            border-radius: 5px;
         }
         &:hover{
-            box-shadow: 0 0 10px black;
+            box-shadow: 0 0 10px #F5DEB3;
+        }
+        &:hover .btn{
+            background-color: rgba(255, 255, 255, 0.8);
         }
     }
 }
@@ -107,6 +115,15 @@ h1{
     width: 60vw;
     user-select: none;
 
+    &__title{
+        display: grid;
+        place-content: center;
+        font-size: 50px;
+        color: #F5DEB3;
+        text-shadow: 0 0 5px black;
+        padding-bottom: 40px;
+    }
+
     &__first--question,&__second--question,&__third--question,&__fourth--question{
         width: 100%;
         padding: 10px;
@@ -122,7 +139,7 @@ h1{
         width: 100%;
         padding: 10px;
         border: 1px solid black;
-        color: black;
+        color: #fff;
         background-color: gray;
     }
 }
