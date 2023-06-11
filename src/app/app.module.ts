@@ -20,7 +20,6 @@ import { ThursdayComponent } from './components/schedule/thursday/thursday.compo
 import { FridayComponent } from './components/schedule/friday/friday.component';
 import { SaturdayComponent } from './components/schedule/saturday/saturday.component';
 import { LoaderComponent } from './components/loader/loader.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -45,8 +44,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
-    BrowserAnimationsModule
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
