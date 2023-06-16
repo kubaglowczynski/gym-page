@@ -137,6 +137,9 @@ select, input{
         height: 40px;
         margin: 2vw;
         cursor: pointer;
+        &:hover{
+            background-color: darken(#fff, 20%);
+        }
     }
 }
 @keyframes display {
