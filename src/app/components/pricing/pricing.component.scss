@@ -31,18 +31,24 @@ h1{
         }
     }
     .info{
+        font-size: 30px;
         margin-top: 5vw;
         margin-left: 2vw;
+        padding-left: 2vw;
         width: 28vw;
         height: 40vw;
         border-radius: 5px 50px 5px 5px;
         background-color: rgba(255, 255, 255, 0.7);
         display: grid;
         place-content: center;
+        @media only screen and (max-width: 1200px) {
+            font-size: 20px;
+        }
         @media only screen and (max-width: 900px) {
             width: 60vw;
             height: 80vw;
             margin: 5vw;
+            font-size: 14px;
         }
         li{
             list-style-type: "✔️";
@@ -63,26 +69,29 @@ h1{
         background: url("https://img.freepik.com/free-vector/realistic-grain-paper-texture_23-2149103334.jpg?w=1480&t=st=1686006335~exp=1686006935~hmac=03a94e6b11115026d753e350e6cfac2b7829bd9023cf9282931228e8004945bd");
         cursor: pointer;
         border-radius: 50px 5px;
-        display: grid;
-        place-content: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
         @media only screen and (max-width: 900px) {
             width: 60vw;
             height: 80vw;
             margin: 5vw;
+            font-size: 14px;
         }
         .title{
-            font-size: 1.5vw;
+            font-size: 30px;
         }
         .price{
-            font-size: 3.5vw;
+            font-size: 30px;
             color: #F5DEB3;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
             p{
-                font-size: 1vw;
-            }
-            .oldprice{
-                color: red;
-                text-decoration: line-through;
-                font-size: 2vw;
+                font-size: 25px;
+                color: darken(#F5DEB3,10%);
+                animation: newprice 2s infinite;
             }
         }
         .btn{
@@ -149,5 +158,19 @@ h1{
 
     to {
         opacity: 1;
+    }
+}
+@keyframes newprice {
+    0% {
+        scale: 1;
+    }
+    40%{
+        scale: 1.5;
+    }
+    60%{
+        scale: 1;
+    }
+    100%{
+        scale: 1;
     }
 }
