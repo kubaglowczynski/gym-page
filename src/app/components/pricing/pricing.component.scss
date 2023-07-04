@@ -39,8 +39,16 @@ h1{
         height: 40vw;
         border-radius: 5px 50px 5px 5px;
         background-color: rgba(255, 255, 255, 0.7);
-        display: grid;
-        place-content: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        .title{
+            font-weight: 700;
+            font-size: 30px;
+            text-align: center;
+            padding: 10px;
+        }
         li{
             list-style-type: "✔️";
         }
@@ -50,10 +58,14 @@ h1{
             background-color: rgba(255, 255, 255, 0.6);
             color: rgb(5, 138, 5);
             font-size: 25px;
-            margin: 30px 10px;
+            margin: 30px 10px 0 10px;
+            padding: 10px;
             transition: 0.3s;
             font-weight: 600;
             cursor: pointer;
+            @media only screen and (max-width: 1200px) {
+                font-size: 20px;
+            }
             &:hover{
                 background-color: rgba(255, 255, 255, 0.7);
                 font-weight: 1000;
