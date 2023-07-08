@@ -12,6 +12,7 @@
     cursor: pointer;
     overflow-y: hidden;
     z-index: 99;
+    transition: 0.4s;
     button{
         height: 30px;
         width: 200px;
@@ -21,5 +22,9 @@
     }
     p{
         color: #454545;
+    }
+
+    &:hover{
+        max-height: 40px;
     }
 }
