@@ -1,4 +1,4 @@
-.lessons{
+.lessons {
     user-select: none;
     padding: 10px 50px;
     display: grid;
@@ -9,7 +9,8 @@
     width: 60vw;
     transition: scale 0.3s ease-in;
     position: relative;
-    &:hover{
+
+    &:hover {
         scale: 1.05;
     }
 
@@ -21,85 +22,94 @@
         border-radius: 5px;
     }
 
-    .lesson_expired{
+    .lesson_expired {
         position: absolute;
         top: 0;
         left: 0;
         width: 100%;
         height: 100%;
-        background-color: rgba(0,0,0,0.5);
+        background-color: rgba(0, 0, 0, 0.5);
         border-radius: 50px;
         display: grid;
         place-content: center;
         color: #fff;
         font-size: 2vw;
+
         @media only screen and (max-width: 900px) {
             font-size: 4vw;
             border-radius: 5px;
         }
     }
 }
-.lesson_example{
+
+.lesson_example {
     border: 1px solid black;
     padding: 5px;
     display: grid;
     place-content: center;
     font-size: 1.2vw;
+
     @media only screen and (max-width: 620px) {
         font-size: 2.4vw;
     }
 }
-.template{
+
+.template {
     font-size: 1vw;
-    color: rgba(0,0,0,0.5);
+    color: rgba(0, 0, 0, 0.5);
+
     @media only screen and (max-width: 620px) {
         font-size: 2vw;
     }
 }
-.btn{
+
+.btn {
     position: relative;
     grid-row: span 2;
     background-color: #fff;
     cursor: pointer;
     z-index: 0;
     transition: 0.4s ease-in;
-    &::before,&::after{
+
+    &::before,
+    &::after {
         position: absolute;
         content: "";
         z-index: -1;
     }
-    &:hover{
-        &:hover{
+
+    &:hover {
+        &:hover {
             box-shadow: inset -10.5rem 0 0 0 #606060, inset 10.5rem 0 0 0 #606060;
             color: darken(#fff, 20%);
         }
     }
 }
 
-.yoga{
+.yoga {
     background-color: #FBDCE2;
 }
 
-.football{
+.football {
     background-color: #60AB9A;
 }
 
-.running{
+.running {
     background-color: #DEDEE0;
 }
 
-.spinning{
+.spinning {
     background-color: #FF9FB2;
 }
 
-.bodybuilding{
+.bodybuilding {
     background-color: #0ACDFF;
 }
 
-.powerlifting{
+.powerlifting {
     background-color: #E9E3B4;
 }
 
-.mma{
+.mma {
     background-color: #F39B6D;
 }

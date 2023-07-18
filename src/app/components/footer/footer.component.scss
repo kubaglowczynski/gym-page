@@ -1,4 +1,4 @@
-.footer{
+.footer {
     color: #252525;
     width: 100%;
     background-color: #d9d9d9;
@@ -14,12 +14,14 @@
         flex-direction: column;
     }
 
-    .socials{
+    .socials {
         width: 30%;
+
         @media only screen and (max-width: 900px) {
             width: 90%;
         }
-        &__img{
+
+        &__img {
             width: 150px;
             height: 100px;
             background: url("https://pbs.twimg.com/media/FttJN9fX0AQX2tL?format=png&name=small");
@@ -27,46 +29,56 @@
             background-repeat: no-repeat;
             background-size: cover;
         }
-        &__links{
+
+        &__links {
             font-size: 2rem;
-            i{
+
+            i {
                 margin-right: 10px;
                 cursor: pointer;
             }
         }
-        &__mainparagraph{
+
+        &__mainparagraph {
             color: rgba(#252525, 0.6);
             font-weight: 500;
             font-size: 1vw;
+
             @media only screen and (max-width: 900px) {
                 display: none;
             }
         }
-        &__paragraph{
-            a{
+
+        &__paragraph {
+            a {
                 color: black;
             }
         }
     }
-    .pages{
+
+    .pages {
         display: flex;
         flex-direction: column;
         align-items: center;
         text-transform: uppercase;
+
         @media only screen and (max-width: 900px) {
             display: none;
         }
-        a{
+
+        a {
             margin: 5px;
             text-decoration: none;
             color: black;
-            &:hover{
+
+            &:hover {
                 color: lighten(black, 40%);
                 scale: 1.2;
             }
         }
     }
-    .openinghours{
+
+    .openinghours {
         @media only screen and (max-width: 900px) {
             display: none;
         }

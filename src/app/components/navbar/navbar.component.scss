@@ -1,10 +1,11 @@
-.main{
+.main {
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 9999;
 }
-.navbar{
+
+.navbar {
     width: 100%;
     height: 10vh;
     background-color: #252525;
@@ -15,6 +16,7 @@
     align-items: center;
     justify-content: space-between;
     box-shadow: 0 4px 12px -2px #252525;
+
     @media only screen and (max-width: 640px) {
         background: url("https://pbs.twimg.com/media/FttNBsmWYAAndM_?format=jpg&name=medium");
         background-repeat: no-repeat;
@@ -22,7 +24,8 @@
         background-position: center;
         height: 7vh;
     }
-    a{
+
+    a {
         color: white;
         text-decoration: none;
         margin-right: 3vw;
@@ -32,36 +35,43 @@
         padding-right: 2px;
         padding-left: 1px;
         text-transform: uppercase;
-        &:hover{
+
+        &:hover {
             color: rgba(white, 0.6);
         }
-        &:hover .link__border{
+
+        &:hover .link__border {
             width: 100%;
         }
+
         @media only screen and (max-width: 640px) {
             display: none;
         }
-        .link__border{
+
+        .link__border {
             width: 0;
             height: 3px;
             position: absolute;
-            top:100%;
+            top: 100%;
             left: 0;
             background: linear-gradient(90deg, transparent, #F5DEB3);
             transition: width 0.3s;
             z-index: 99;
         }
     }
-    img{
+
+    img {
         width: 18vh;
         margin-left: 2vw;
         box-shadow: 0 0 10px gray;
         cursor: pointer;
+
         @media only screen and (max-width: 640px) {
             display: none;
         }
     }
-    button{
+
+    button {
         display: none;
         font-size: 1.5rem;
         background-color: transparent;
@@ -69,15 +79,18 @@
         color: gray;
         margin-right: 10px;
         padding: 5px;
+
         @media only screen and (max-width: 640px) {
             display: flex;
         }
-        i{
+
+        i {
             padding: 5px;
         }
     }
 }
-.mobile-homebtn{
+
+.mobile-homebtn {
     @media only screen and (max-width: 640px) {
         display: block;
         position: absolute;
@@ -85,9 +98,11 @@
         width: 70%;
         background-color: transparent;
     }
+
     display: none;
 }
-.mobile-link{
+
+.mobile-link {
     width: 99%;
     border: 1px solid black;
     text-align: center;
@@ -95,16 +110,19 @@
     padding: 10px 0;
     box-shadow: 0 0 5px -5px gray;
     color: rgb(43, 184, 194);
-    &s{
+
+    &s {
         display: none;
         flex-direction: column;
         align-items: center;
+
         @media only screen and (mix-width: 640px) {
             display: none;
         }
     }
 }
-.mobile-blur{
+
+.mobile-blur {
     width: 100%;
     height: 100vh;
     background-color: rgba(white, 0.2);

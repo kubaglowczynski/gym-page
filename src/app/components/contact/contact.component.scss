@@ -1,61 +1,79 @@
-h1{
+h1 {
     margin-top: 10vh;
     font-size: 3rem;
     padding: 50px;
 }
-.contact{
+
+.contact {
     background-color: #d9d9d9;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr auto;
     animation: display 0.3s ease-in;
+
     @media only screen and (max-width: 900px) {
         display: flex;
         flex-direction: column;
     }
-    &__form{
+
+    &__form {
         background-color: #999999;
         display: grid;
         place-content: center;
-        .form{
+
+        .form {
             width: 100%;
             font-size: 2rem;
         }
     }
-    &__informations{
+
+    &__informations {
         background-color: bisque;
-        h2{
+
+        h2 {
             margin: 40px 20px;
             font-size: 2rem;
         }
-        p{
+
+        p {
             margin: 20px;
             font-size: 20px;
         }
-        .about{
+
+        .about {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            &__adress, &__openhours, &__info, &__socialmedia{
+
+            &__adress,
+            &__openhours,
+            &__info,
+            &__socialmedia {
                 margin: 20px;
-                h4{
+
+                h4 {
                     font-size: 25px;
+
                     @media only screen and (max-width: 900px) {
                         font-size: 15px;
                     }
                 }
-                p{
+
+                p {
                     color: #999999;
                     margin: 0;
                     font-size: 20px;
+
                     @media only screen and (max-width: 680px) {
                         font-size: 13px;
                     }
                 }
-                hr{
+
+                hr {
                     width: 80px;
                     border: 1px solid #454545;
                 }
-                .icon{
+
+                .icon {
                     display: grid;
                     place-content: center;
                     margin-right: 10px;
@@ -67,7 +85,8 @@ h1{
                     border-radius: 50%;
                     cursor: pointer;
                     transition: 0.3s ease-in;
-                    &:hover{
+
+                    &:hover {
                         color: #fff;
                         background-color: #000;
                     }
@@ -75,45 +94,55 @@ h1{
             }
         }
     }
-    &__map{
+
+    &__map {
         grid-column: 1 / -1;
         grid-row: 2;
         width: 100%;
         background-color: black;
         height: 700px;
+
         @media only screen and (max-width: 900px) {
             height: 300px;
         }
-        .map{
+
+        .map {
             width: 100%;
             height: 100%;
         }
     }
 }
-.about__socialmedia>p{
+
+.about__socialmedia>p {
     display: flex;
     flex-wrap: wrap;
+
     @media only screen and (max-width: 900px) {
         font-size: 20px;
     }
 }
-.message{
+
+.message {
     border: 1px solid gray;
     width: 40vw;
     height: 20vw;
     resize: none;
     padding: 10px;
     font-size: 18px;
+
     &:focus {
         outline: none;
         background-color: darken(#fff, 5%);
     }
+
     @media only screen and (max-width: 900px) {
         width: 80%;
         height: 50vw;
     }
 }
-.topics, .email{
+
+.topics,
+.email {
     height: 30px;
     width: 240px;
     font-size: 18px;
@@ -121,17 +150,21 @@ h1{
     padding-left: 3px;
     border: 1px solid gray;
 }
-select, input{
+
+select,
+input {
     &:focus {
         outline: none;
         background-color: darken(#fff, 5%);
     }
 }
-.sendbtn{
+
+.sendbtn {
     display: flex;
     justify-content: center;
     align-items: center;
-    .btn{
+
+    .btn {
         font-size: 20px;
         border: none;
         border-radius: 5px;
@@ -139,11 +172,13 @@ select, input{
         height: 40px;
         margin: 2vw;
         cursor: pointer;
-        &:hover{
+
+        &:hover {
             background-color: darken(#fff, 20%);
         }
     }
 }
+
 @keyframes display {
     from {
         opacity: 0;

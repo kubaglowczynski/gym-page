@@ -1,5 +1,5 @@
-.livesection{
-    background-color: rgba(#fff,0.6);
+.livesection {
+    background-color: rgba(#fff, 0.6);
     width: 200px;
     max-height: 30px;
 
@@ -13,18 +13,20 @@
     overflow-y: hidden;
     z-index: 99;
     transition: 0.4s;
-    button{
+
+    button {
         height: 30px;
         width: 200px;
         color: black;
         cursor: pointer;
         border: none;
     }
-    p{
+
+    p {
         color: #454545;
     }
 
-    &:hover{
+    &:hover {
         max-height: 40px;
     }
 }

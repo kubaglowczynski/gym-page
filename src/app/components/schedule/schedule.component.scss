@@ -1,23 +1,27 @@
-h1{
+h1 {
     margin-top: 10vh;
     font-size: 3rem;
     padding: 50px;
 }
-.schedule{
+
+.schedule {
     padding: 5vh 0;
     display: grid;
     place-items: center;
     animation: display 0.3s ease-in;
-    &__days{
+
+    &__days {
         padding: 20px;
         margin: 20px;
+
         @media only screen and (max-width: 900px) {
             display: grid;
             grid-template-columns: 100px 100px 100px;
         }
     }
 }
-.daybtn{
+
+.daybtn {
     width: 150px;
     height: 50px;
     border: 2px solid black;
@@ -25,13 +29,16 @@ h1{
     background-color: #f8f8f8;
     margin: 5px 10px;
     cursor: pointer;
-    &:hover{
+
+    &:hover {
         background-color: #b2b2b2;
     }
+
     @media only screen and (max-width: 900px) {
         width: 90px;
     }
 }
+
 @keyframes display {
     from {
         opacity: 0;
