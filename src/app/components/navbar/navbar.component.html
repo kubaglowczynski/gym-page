@@ -1,20 +1,21 @@
 <div class="main">
-<div class="navbar">
-    <div class="logo">
-        <img (click)="scrollTo()" routerLink="/" [ngStyle]="style" src="https://pbs.twimg.com/media/FttJN9fX0AQX2tL?format=png&name=small" alt="logo">
+    <div class="navbar">
+        <div class="logo">
+            <img (click)="scrollTo()" routerLink="/" [ngStyle]="style"
+                src="https://pbs.twimg.com/media/FttJN9fX0AQX2tL?format=png&name=small" alt="logo">
+        </div>
+        <div class="links">
+            <a (click)="scrollTo()" routerLink="/">Home<span class="link__border"></span></a>
+            <a (click)="scrollTo()" routerLink="/news"><span class="link__border"></span>News</a>
+            <a (click)="scrollTo()" routerLink="/about"><span class="link__border"></span>About</a>
+            <a (click)="scrollTo()" routerLink="/offer"><span class="link__border"></span>Offer</a>
+            <a (click)="scrollTo()" routerLink="/schedule"><span class="link__border"></span>Schedule</a>
+            <a (click)="scrollTo()" routerLink="/pricing"><span class="link__border"></span>Pricing</a>
+            <a (click)="scrollTo()" routerLink="/contact"><span class="link__border"></span>Contact</a>
+        </div>
+        <button (click)="onClickMobile(); scrollTo()"><i class="fa-solid fa-bars"></i></button>
+        <div class="mobile-homebtn" (click)="openLink()"></div>
     </div>
-    <div class="links">
-        <a (click)="scrollTo()" routerLink="/">Home<span class="link__border"></span></a>
-        <a (click)="scrollTo()" routerLink="/news"><span class="link__border"></span>News</a>
-        <a (click)="scrollTo()" routerLink="/about"><span class="link__border"></span>About</a>
-        <a (click)="scrollTo()" routerLink="/offer"><span class="link__border"></span>Offer</a>
-        <a (click)="scrollTo()" routerLink="/schedule"><span class="link__border"></span>Schedule</a>
-        <a (click)="scrollTo()" routerLink="/pricing"><span class="link__border"></span>Pricing</a>
-        <a (click)="scrollTo()" routerLink="/contact"><span class="link__border"></span>Contact</a>
-    </div>
-    <button (click)="onClickMobile(); scrollTo()"><i class="fa-solid fa-bars"></i></button>
-    <div class="mobile-homebtn" (click)="openLink()"></div>
-</div>
     <div class="mobile-links" [ngStyle]="styleMobileLinks">
         <div (click)="hideLinks()" routerLink="/" class="mobile-link">Home</div>
         <div (click)="hideLinks()" routerLink="/news" class="mobile-link">News</div>

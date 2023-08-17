@@ -3,9 +3,9 @@ import { Component, AfterViewInit } from '@angular/core';
 @Component({
   selector: 'app-contact',
   templateUrl: './contact.component.html',
-  styleUrls: ['./contact.component.scss']
+  styleUrls: ['./contact.component.scss'],
 })
-export class ContactComponent implements AfterViewInit{
+export class ContactComponent implements AfterViewInit {
   isLoading = true;
 
   constructor() {}
